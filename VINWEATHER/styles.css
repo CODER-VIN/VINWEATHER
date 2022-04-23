@@ -1,0 +1,187 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.762);
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  background-color: rgba(240, 133, 66, 0.701);
+  /*background-image: url('https://source.unsplash.com/2560x1440?landscape');*/
+  /***/
+}
+img {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+}
+#display {
+  background: #345a9bd0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 540px;
+  margin: 1em;
+  /**See transitionIn at the bottom**/
+  animation: transitionIn 0.75s;
+}
+#searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  color: white;
+}
+#search {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 26px;
+  background-color: #fcfcfc2b;
+  color: white;
+  font-family: inherit;
+  font-size: 120%;
+  width: 100%;
+}
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 46px;
+  width: 46px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #345a9bd0;
+}
+button img {
+  width: 40px;
+  height: 25px;
+}
+h2 {
+  color: white;
+  margin: 2px;
+}
+#currentForecast * {
+  color: white;
+}
+#currentTemp {
+  font-size: 30px;
+  margin: 4px;
+}
+#currentImg {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+#currentForecastDesc {
+  font-size: 16px;
+}
+#break {
+  flex-basis: 100%;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+#optionSelect {
+  display: flex;
+  margin: 2px;
+}
+/***Daily***/
+#dailyMain {
+  background: #345a9bd0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 540px;
+  margin: 1em;
+  animation: transitionIn 0.75s;
+}
+/***Hourly***/
+#hourlyMain {
+  background: #345a9bd0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 540px;
+  margin: 1em;
+  animation: transitionIn 0.75s;
+}
+
+#firstSix {
+  display: flex;
+}
+#secondSix {
+  display: flex;
+}
+#thirdSix {
+  display: flex;
+}
+
+.hourlyHalf {
+  width: 24%;
+  padding: 2px;
+  margin: 5px;
+}
+
+/***Five Day***/
+#weeklyMain {
+  background: #345a9bd0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 540px;
+  margin: 1em;
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+.linkButton {
+  border-style: solid;
+  margin: 10px;
+  font-weight: bold;
+  padding: 3px;
+  transition: 0.4s;
+}
+.linkButton:hover {
+  background-color: white;
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  /**Insert Cool Styling Here**/
+}
+a:active {
+  text-decoration: none;
+}

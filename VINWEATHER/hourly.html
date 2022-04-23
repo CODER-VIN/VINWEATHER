@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VINWEATHER</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="hourlyMain">
+      <div id="searchBox">
+        <input type="text" id="search" placeholder="Enter Your Zip Code" />
+        <button type="submit" id="submitButton">
+          <img src="img/search.svg" alt="" />
+        </button>
+      </div>
+      <h2 id="currentCity">Hourly Forecast</h2>
+      <section id="hourlyForecast">
+        <span id="firstSix">
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+        </span>
+
+        <span id="secondSix">
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+        </span>
+        <span id="thirdSix">
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+          <div class="hourlyHalf">
+            <p class="hourlyText">HOUR</p>
+            <img src="img/sunny.svg" class="hourlyIcon" />
+          </div>
+        </span>
+      </section>
+    </main>
+    <div id="break"></div>
+    <span id="optionSelect">
+      <a class="linkButton" href="index.html" id="currentButton">Current</a>
+      <a class="linkButton" href="daily.html" id="dailyButton">Daily</a>
+      <a class="linkButton" href="hourly.html" id="hourlyButton">Hourly</a>
+      <a class="linkButton" href="weekly.html" id="weeklyButton">Five Day</a>
+    </span>
+    <script src="helper.js"></script>
+    <script src="forecast.js"></script>
+    <script src="hourly.js"></script>
+  </body>
+</html>
